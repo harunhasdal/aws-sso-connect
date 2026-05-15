@@ -64,6 +64,17 @@ If your token has expired, you'll see an error prompting you to run `aws sso log
 
 ## Installation
 
+### Option 1: Download pre-built binary
+
+Download the latest binary for your platform from [GitHub Releases](https://github.com/harunhasdal/aws-sso-connect/releases), then place it on your PATH:
+
+```sh
+chmod +x aws-sso-connect
+mv aws-sso-connect /usr/local/bin/
+```
+
+### Option 2: Build from source
+
 ```sh
 cargo build --release
 
