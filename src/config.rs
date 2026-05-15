@@ -95,10 +95,8 @@ pub fn render_config(preamble: &[String], sections: &[ConfigSection]) -> String 
     }
 
     for (i, section) in sections.iter().enumerate() {
-        if i > 0 || !trimmed_preamble.is_empty() {
-            if i > 0 {
-                output.push('\n');
-            }
+        if i > 0 {
+            output.push('\n');
         }
         output.push_str(&section.header);
         output.push('\n');

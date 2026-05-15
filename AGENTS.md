@@ -85,7 +85,5 @@ Options:
 
 ## Development notes
 
-- No test suite yet — add tests under `#[cfg(test)]` modules or in a `tests/` directory.
-- The INI parser is custom (not using a crate) to preserve comments and formatting exactly.
 - Profile names are sanitized: non-alphanumeric chars become `_`, result is lowercased.
 - All status/progress messages go to stderr; only the config/JSON output goes to stdout.
