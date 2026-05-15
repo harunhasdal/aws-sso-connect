@@ -1,0 +1,16 @@
+[package]
+name = "aws-sso-connect"
+version = "0.1.0"
+edition = "2021"
+description = "AWS SSO Account and Role Lister"
+
+[dependencies]
+aws-config = { version = "1", features = ["behavior-version-latest"] }
+aws-sdk-sso = "1"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
